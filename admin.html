@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Management</title>
+    <link rel="stylesheet" href="CSS/admin.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet" />
+</head>
+<body>
+    <div class="sidebar locked">
+        <div class="logo_items flex">
+            <span class="nav_image">
+                <img src="bitlogo.png" alt="BIT Logo" />
+            </span>
+            <span class="logo_name">B I T</span>
+            <i class="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
+            <i class="bx bx-x" id="sidebar-close"></i>
+        </div>
+        <div class="menu_container">
+            <div class="menu_items">
+                <ul class="menu_item">
+                    <div class="menu_title">
+                        <span class="title">Main</span>
+                        <span class="line"></span>
+                    </div>
+                    <li class="item">
+                        <a href="#" class="link flex" id="sidebar-faculty">
+                            <i class="bx bx-user"></i>
+                            <span>Faculty</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar_profile flex">
+                <span class="nav_img">
+                    <img src="bitlogo.png" alt="BIT Logo" />
+                </span>
+                <div class="data_text">
+                    <span class="name">BIT</span>
+                    <span class="email">bit@bitsathy.ac.in</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar flex">
+        <i class="bx bx-menu" id="sidebar-open"></i>
+        <ul class="nav-links">
+            <li><a href="#" id="nav-faculty" class="active">Faculty</a></li>
+            <li><a href="#" id="nav-venue">Venue</a></li>
+            <li><a href="#" id="nav-department">Department</a></li>
+            <li><a href="#" id="nav-subject">Subject</a></li>
+            <li><a href="#" id="nav-semester">Semester</a></li>
+        </ul>
+        <span class="nav-img">
+            <img src="bitlogo.png" alt="BIT Logo" />
+        </span>
+    </nav>
+
+    <main id="main-content">
+        <div class="faculty-todo-container">
+            <div class="faculty-todo-header">
+                <h2>Faculty List</h2>
+                <div class="faculty-todo-form">
+                    <input type="text" class="faculty-name-input" placeholder="Faculty Name" />
+                    <input type="text" class="faculty-id-input" placeholder="Faculty ID" />
+                    <button class="faculty-add-button">Add</button>
+                </div>
+            </div>
+            <div class="faculty-todo-list">
+                <!-- Faculty todo items will be dynamically added here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="JS/admin.js"></script>
+</body>
+</html>
